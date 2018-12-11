@@ -61,4 +61,20 @@ public class Person {
         //      Math::pow 等价于 (a, b) -> Math.pow(a, b)
         Arrays.sort(people, Person::compareByAge);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
 }
